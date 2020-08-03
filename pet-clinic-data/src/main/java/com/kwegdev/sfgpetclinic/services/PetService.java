@@ -2,16 +2,16 @@ package com.kwegdev.sfgpetclinic.services;
 
 import com.kwegdev.sfgpetclinic.model.Pet;
 
-import java.util.Set;
-
 /**
  * created by kw on 8/2/2020 @ 8:45 PM
  */
-public interface PetService {
+public interface PetService extends CrudService<Pet, Long> {
 
-   Pet findById(Long id);
-
-    Pet save(Pet pet);
-
-    Set<Pet> findAll();
+//    implemented by CrudService now
+//
+//   Pet findById(Long id);
+//
+//    Pet save(Pet pet);
+//
+//    Set<Pet> findAll();
 }
