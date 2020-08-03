@@ -3,7 +3,7 @@ package com.kwegdev.sfgpetclinic.model;
 /**
  * created by kw on 7/31/2020 @ 3:02 PM
  */
-public class Person {
+public class Person extends BaseEntity {
 
     private String firstName;
     private String lastName;
