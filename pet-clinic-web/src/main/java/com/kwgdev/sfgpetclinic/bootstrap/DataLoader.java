@@ -26,7 +26,7 @@ public class DataLoader implements CommandLineRunner {
         this.vetService = vetService;
     }
 
-    // created using alt-insert -> implement methods
+    // created using alt-insert -> implement methods.
     @Override
     public void run(String... args) throws Exception {
 

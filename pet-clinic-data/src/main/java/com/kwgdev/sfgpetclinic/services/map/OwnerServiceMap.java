@@ -11,7 +11,7 @@ import java.util.Set;
  */
 // public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
 
-@Service                            // OwnerService implements CrudService, generics no longer needed
+@Service                            // OwnerService implements CrudService, generics no longer needed.
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {
