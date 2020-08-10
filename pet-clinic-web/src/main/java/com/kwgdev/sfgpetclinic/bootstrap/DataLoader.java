@@ -1,11 +1,10 @@
 package com.kwgdev.sfgpetclinic.bootstrap;
 
-import com.kwegdev.sfgpetclinic.model.Owner;
-import com.kwegdev.sfgpetclinic.model.Vet;
-import com.kwegdev.sfgpetclinic.services.OwnerService;
-import com.kwegdev.sfgpetclinic.services.VetService;
-import com.kwegdev.sfgpetclinic.services.map.OwnerServiceMap;
-import com.kwegdev.sfgpetclinic.services.map.VetServiceMap;
+import com.kwgdev.sfgpetclinic.model.Owner;
+import com.kwgdev.sfgpetclinic.model.Vet;
+import com.kwgdev.sfgpetclinic.services.OwnerService;
+import com.kwgdev.sfgpetclinic.services.VetService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,14 +14,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class DataLoader implements CommandLineRunner {
 
+
+
     private final OwnerService ownerService;
     private final VetService vetService;
 
-
-
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    // Constructor
+    @Autowired
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     // created using alt-insert -> implement methods

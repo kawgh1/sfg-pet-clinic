@@ -1,7 +1,8 @@
-package com.kwegdev.sfgpetclinic.services.map;
+package com.kwgdev.sfgpetclinic.services.map;
 
-import com.kwegdev.sfgpetclinic.model.Owner;
-import com.kwegdev.sfgpetclinic.services.OwnerService;
+import com.kwgdev.sfgpetclinic.model.Owner;
+import com.kwgdev.sfgpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
@@ -10,7 +11,7 @@ import java.util.Set;
  */
 // public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
 
-                            // OwnerService implements CrudService, generics no longer needed
+@Service                            // OwnerService implements CrudService, generics no longer needed
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {

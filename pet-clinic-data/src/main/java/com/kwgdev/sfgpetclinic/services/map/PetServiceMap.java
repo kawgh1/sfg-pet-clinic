@@ -1,7 +1,8 @@
-package com.kwegdev.sfgpetclinic.services.map;
+package com.kwgdev.sfgpetclinic.services.map;
 
-import com.kwegdev.sfgpetclinic.model.Pet;
-import com.kwegdev.sfgpetclinic.services.PetService;
+import com.kwgdev.sfgpetclinic.model.Pet;
+import com.kwgdev.sfgpetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
@@ -10,7 +11,7 @@ import java.util.Set;
  */
 // public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
 
-                        // PetService implements CrudService, generics no longer needed
+@Service                        // PetService implements CrudService, generics no longer needed
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
