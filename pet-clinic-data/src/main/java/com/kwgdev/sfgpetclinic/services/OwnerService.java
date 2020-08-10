@@ -1,6 +1,6 @@
-package com.kwegdev.sfgpetclinic.services;
+package com.kwgdev.sfgpetclinic.services;
 
-import com.kwegdev.sfgpetclinic.model.Owner;
+import com.kwgdev.sfgpetclinic.model.Owner;
 
 /**
  * created by kw on 8/2/2020 @ 8:43 PM

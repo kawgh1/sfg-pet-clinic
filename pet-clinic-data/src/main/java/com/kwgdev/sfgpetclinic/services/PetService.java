@@ -1,6 +1,6 @@
-package com.kwegdev.sfgpetclinic.services;
+package com.kwgdev.sfgpetclinic.services;
 
-import com.kwegdev.sfgpetclinic.model.Pet;
+import com.kwgdev.sfgpetclinic.model.Pet;
 
 /**
  * created by kw on 8/2/2020 @ 8:45 PM

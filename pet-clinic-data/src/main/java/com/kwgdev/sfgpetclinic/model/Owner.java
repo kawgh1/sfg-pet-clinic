@@ -1,4 +1,4 @@
-package com.kwegdev.sfgpetclinic.model;
+package com.kwgdev.sfgpetclinic.model;
 
 /**
  * created by kw on 7/31/2020 @ 3:03 PM
