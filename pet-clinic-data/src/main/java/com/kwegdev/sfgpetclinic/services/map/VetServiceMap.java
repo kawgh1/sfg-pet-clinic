@@ -1,14 +1,17 @@
 package com.kwegdev.sfgpetclinic.services.map;
 
 import com.kwegdev.sfgpetclinic.model.Vet;
-import com.kwegdev.sfgpetclinic.services.CrudService;
+import com.kwegdev.sfgpetclinic.services.VetService;
 
 import java.util.Set;
 
 /**
  * created by kw on 8/2/2020 @ 11:33 PM
  */
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+// public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+
+                        // VetService implements CrudService, generics no longer needed
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
 
     @Override
