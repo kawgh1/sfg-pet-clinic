@@ -14,12 +14,12 @@ import java.util.Set;
 // public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
 
 @Service                        // VetService implements CrudService, generics no longer needed.
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
+public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
 
     private final SpecialityService specialityService;
 
 
-    public VetServiceMap(SpecialityService specialityService) {
+    public VetMapService(SpecialityService specialityService) {
         this.specialityService = specialityService;
     }
 

@@ -12,7 +12,7 @@ import java.util.Set;
 // public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
 
 @Service                        // PetService implements CrudService, generics no longer needed.
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
+public class PetMapService extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
