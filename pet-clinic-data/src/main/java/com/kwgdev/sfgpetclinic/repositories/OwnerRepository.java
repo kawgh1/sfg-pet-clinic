@@ -8,4 +8,6 @@ import org.springframework.data.repository.CrudRepository;
  */
 // Crud repo takes in an object and its ID, here an Owner and its ID(Long)
 public interface OwnerRepository extends CrudRepository<Owner, Long> {
+
+    Owner findByLastName(String lastName);
 }
