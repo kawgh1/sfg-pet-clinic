@@ -5,6 +5,7 @@ import com.kwgdev.sfgpetclinic.model.Pet;
 import com.kwgdev.sfgpetclinic.services.OwnerService;
 import com.kwgdev.sfgpetclinic.services.PetService;
 import com.kwgdev.sfgpetclinic.services.PetTypeService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -15,6 +16,7 @@ import java.util.Set;
 // public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
 
 @Service                            // OwnerService implements CrudService, generics no longer needed.
+@Profile({"default", "map"})
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     private final PetTypeService petTypeService;

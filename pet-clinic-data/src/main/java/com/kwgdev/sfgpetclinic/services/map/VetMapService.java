@@ -4,6 +4,7 @@ import com.kwgdev.sfgpetclinic.model.Speciality;
 import com.kwgdev.sfgpetclinic.model.Vet;
 import com.kwgdev.sfgpetclinic.services.SpecialityService;
 import com.kwgdev.sfgpetclinic.services.VetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -14,6 +15,7 @@ import java.util.Set;
 // public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
 
 @Service                        // VetService implements CrudService, generics no longer needed.
+@Profile({"default", "map"})
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
 
     private final SpecialityService specialityService;
