@@ -1,17 +1,24 @@
 package com.kwgdev.sfgpetclinic.model;
 
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
 /**
  * created by kw on 7/31/2020 @ 3:03 PM
  */
+@Entity
+@Table(name = "owners")
 public class Owner extends Person {
 
+    @Column(name = "address")
     private String address;
+    @Column(name = "city")
     private String city;
+    @Column(name = "telephone")
     private String telephone;
 
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner") // if owner is deleted, then delete all their pets too
     private Set<Pet> pets = new HashSet<>();
 
     public String getAddress() {
