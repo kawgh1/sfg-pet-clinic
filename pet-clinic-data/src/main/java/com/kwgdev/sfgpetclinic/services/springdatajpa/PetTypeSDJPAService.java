@@ -3,6 +3,8 @@ package com.kwgdev.sfgpetclinic.services.springdatajpa;
 import com.kwgdev.sfgpetclinic.model.PetType;
 import com.kwgdev.sfgpetclinic.repositories.PetTypeRepository;
 import com.kwgdev.sfgpetclinic.services.PetTypeService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -10,6 +12,8 @@ import java.util.Set;
 /**
  * created by kw on 8/12/2020 @ 10:11 PM
  */
+@Service
+@Profile("springdatajpa")
 public class PetTypeSDJPAService implements PetTypeService {
 
     private final PetTypeRepository petTypeRepository;
