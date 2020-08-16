@@ -26,7 +26,7 @@ public class OwnerController {
         this.ownerService = ownerService;
     }
 
-    @InitBinder
+    @InitBinder // old school way of binding html form objects to Java POJOs for handling, RESTful is the new way
     public void setAllowedFields(WebDataBinder dataBinder) {
         dataBinder.setDisallowedFields("id");
     }
