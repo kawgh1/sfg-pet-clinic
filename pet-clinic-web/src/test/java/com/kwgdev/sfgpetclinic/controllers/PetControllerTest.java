@@ -1,6 +1,7 @@
 package com.kwgdev.sfgpetclinic.controllers;
 
 import com.kwgdev.sfgpetclinic.model.Owner;
+import com.kwgdev.sfgpetclinic.model.Pet;
 import com.kwgdev.sfgpetclinic.model.PetType;
 import com.kwgdev.sfgpetclinic.services.OwnerService;
 import com.kwgdev.sfgpetclinic.services.PetService;
