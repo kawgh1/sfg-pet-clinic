@@ -22,7 +22,8 @@
         <td th:text="${vet.id}">1</td>
         <td th:text="${vet.firstName}">Joe</td>
         <td th:text="${vet.lastName}">Buck</td>
-        <td th:text="${vet.getSpecialities()}">Doctor</td>
+        <td th:each="speciality : ${vet.getSpecialities()}"
+            th:text="${speciality.toString()}">Doctor</td>
     </tr>
     </tbody>
 </table>
