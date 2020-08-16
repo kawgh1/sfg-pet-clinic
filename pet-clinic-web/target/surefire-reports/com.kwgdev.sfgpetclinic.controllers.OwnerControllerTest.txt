@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.kwgdev.sfgpetclinic.controllers.OwnerControllerTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.649 s - in com.kwgdev.sfgpetclinic.controllers.OwnerControllerTest
