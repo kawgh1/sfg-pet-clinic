@@ -3,6 +3,8 @@ package com.kwgdev.sfgpetclinic.repositories;
 import com.kwgdev.sfgpetclinic.model.Owner;
 import org.springframework.data.repository.CrudRepository;
 
+import java.util.List;
+
 /**
  * created by kw on 8/12/2020 @ 9:51 PM
  */
@@ -10,4 +12,6 @@ import org.springframework.data.repository.CrudRepository;
 public interface OwnerRepository extends CrudRepository<Owner, Long> {
 
     Owner findByLastName(String lastName);
+
+    List<Owner> findAllByLastNameLike(String lastName);
 }

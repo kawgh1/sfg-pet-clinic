@@ -9,8 +9,8 @@ import java.util.Set;
 /**
  * created by kw on 7/31/2020 @ 3:02 PM
  */
-@Setter
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -22,6 +22,7 @@ public class Vet extends Person {
     @JoinTable(name = "vet_specialities", joinColumns = @JoinColumn(name = "vet_id"),
             inverseJoinColumns = @JoinColumn(name = "speciality_id"))
     private Set<Speciality> specialities = new HashSet<>();
+
 
 
 
