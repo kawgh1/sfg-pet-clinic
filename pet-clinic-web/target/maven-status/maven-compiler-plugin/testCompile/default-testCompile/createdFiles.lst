@@ -1,5 +1,6 @@
 com\kwgdev\sfgpetclinic\controllers\PetControllerTest.class
 com\kwgdev\sfgpetclinic\SfgPetClinicApplicationTests.class
 com\kwgdev\sfgpetclinic\controllers\IndexControllerTest.class
+com\kwgdev\sfgpetclinic\controllers\VisitControllerTest.class
 com\kwgdev\sfgpetclinic\controllers\VetControllerTest.class
 com\kwgdev\sfgpetclinic\controllers\OwnerControllerTest.class

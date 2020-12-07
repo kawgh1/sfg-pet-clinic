@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.kwgdev.sfgpetclinic.SfgPetClinicApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.808 s - in com.kwgdev.sfgpetclinic.SfgPetClinicApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.487 s - in com.kwgdev.sfgpetclinic.SfgPetClinicApplicationTests

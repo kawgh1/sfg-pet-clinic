@@ -2,6 +2,9 @@
 
 # Spring Framework Pet Clinic
 
+This is a Spring (not SpringBoot) implementation with Thymeleaf and LESS
+
+
 This repo is for an online course called [Spring Framework 5: Beginner to Guru](https://www.udemy.com/spring-framework-5-beginner-to-guru/?couponCode=GITHUB_SFGPETCLINIC).
 
 Contained in this repo is an opinionated version of the classic reference application - [Spring Pet Clinic](https://github.com/spring-projects/spring-petclinic)
